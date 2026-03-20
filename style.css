@@ -1,0 +1,378 @@
+*{
+    margin:0;
+    font-family: Arial; 
+}
+
+/*Only the horizontal Container*/
+.navbar{
+    height:60px;
+    background-color: #0f1111;
+    color: white;
+    width: 100%;
+
+    /*To add multiple divs on same-line*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /*Everything on navbar will be centered*/
+
+}
+/*Container END*/
+/*-----------------------------------------*/
+
+
+/* Box1 Logo*/
+/*Logo Container*/
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+
+/*Logo*/
+.logo{
+    background-image: url("./assets/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+/*Logo end*/
+
+/*Border Class for a border that is visible on Hover*/
+.border{
+    border: 1.5px solid transparent;
+}
+
+/*Border that is visible on Hover*/
+.border:hover{
+    border: 1.5px solid white;
+}
+/*END*/
+/*---------------------------------------------------*/
+
+
+/*Box 2 Address*/
+.add-first{
+    color: #cccccc;
+    font-size:0.85rem;
+    margin-left: 15px;
+
+}
+
+.add-second{
+    font-size:1rem;
+    margin-left: 3px;
+}
+
+/*To bring 2 things on same line in a div use Flexbox*/
+.add-icon{
+    display: flex;
+    /*Aligining in Center of Navbar*/
+    align-items: center;
+}
+/*---------------------------------------------------*/
+
+
+
+/*Box 3 Options and Search*/
+/*To bring all items on same line in div=navsearch*/
+.navsearch{
+    display: flex;
+    /*To space 3 elements equally*/
+    justify-content: space-evenly;
+    background-color: darkgoldenrod;
+    height: 40px;
+    width: 620px;
+    border-radius: 5px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    width: 50px;
+    text-align: center;
+    border:none;
+}
+
+.search-input{
+    width:100%; 
+    font-size:1rem; 
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    /*To bring icon to Center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*To increase Icon size*/
+    font-size: 1.2rem;
+
+    background-color:#febd68;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    /*To change color of icon*/
+    color: #0f1111;
+}
+
+.navsearch:hover{
+    border: 2px solid orange;
+
+}
+/*-----------------END of Box 3---------------*/
+
+
+/*Box 4a  Country*/
+.countrys4a{
+    display: flex;
+}
+
+/*Dropdown becomes Transparent with background*/
+.options4a{
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+/*END------------------*/
+
+
+/*Box 4 Styling*/
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/*END-----------------*/
+
+
+
+/*Box 6 Cart*/
+.nav-cart i{
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*SECTION END ----------------------------------------------------*/
+
+
+/*-------------Panel navbar------------*/
+.panel{
+    display: flex;
+    height: 39px;
+    background-color: #232F3E;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.panel a{
+    text-decoration: none;
+    color: white;
+    margin-left: 13px;
+}
+
+/*2nd Div*/
+.panel-ops{
+    width: 70%;
+}
+
+/*3rd Div*/
+.panel-deals{
+    font-size:0.9rem ;
+}
+
+/*-------------END OF NAVBAR----------------------*/
+
+
+
+
+
+/*-------------HERO SECTION---------------------------------*/
+
+.hero-section{
+    background-image: url("./assets/hero_image.jpg");
+    height: 370px;
+    background-size: cover;
+
+    /*Moving display message to bottom of container */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-message{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.hero-message a{
+    color:#007185;
+    text-decoration: none;
+}
+
+/*--------END OF HERO SECTION------------*/
+
+
+
+/*SHOP SECTION like a Card Section--------------------*/
+.shop-section box1{
+    text-decoration: none;
+}
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    /*4 box at once or changes as per screen size*/
+    flex-wrap: wrap;
+}
+
+
+.box{
+    height: 400px;
+    /*Spred across space page 25% */
+    width: 23%;
+    background-color: whitesmoke;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content a{
+    text-decoration: none;
+    color:#007185;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/*END OF SHOPPING SECTION--------------------*/
+
+
+/*---------------Footer----------------*/
+
+.foot-panel1{
+    background-color: #37475A;
+    color: white;
+    height: 49px;
+    width: 100%;
+    /*Centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-panel1 a{
+    text-decoration: none;
+     color: white;
+     font-size: 0.85rem;
+}
+
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel2{
+    background-color:#222f3d ;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+ul{
+    margin-top: 10px;
+}
+
+.foot-panel2 a{
+    text-decoration: none;
+    color: #dddddd;
+    display: block;
+    font-size: 0.85rem;
+}
+
+
+.foot-panel2 ul{
+    list-style-type: none;
+}
+
+/* Adding Space between lists and heading also between each list*/
+
+.foot-panel2 li{
+    margin-bottom: 8px;
+}
+
+.foot-panel2 h4{
+    margin-bottom: 5px;
+}
+/*End of Section part*/
+
+.foot-panel3{
+    background-color: #222f3d;
+    border-top: 0.5px solid white;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-foot{
+    background-image: url("./assets/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #0f1111;
+    color: white;
+    height: 100px;
+}
+
+.foot-panel4 a{
+    text-decoration: none;
+    color: white;
+}
+
+.pages{
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top: 25px;
+    
+}
+
+.copyright{
+    padding-top: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
